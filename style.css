@@ -1,0 +1,235 @@
+html {
+    scroll-behavior: smooth;
+  }
+a:hover {
+    background-color: #33A8FF;
+}
+
+  body{
+    width: 100%;
+    height: 300px;
+    background-image: url("bg2.jpeg");
+    background-size: cover;
+    /* border: 2px solid black; */
+    font-family: "Lato", sans-serif;
+    padding: 10px;
+    margin: auto;
+}
+  
+  nav {
+    background-color: #111;
+    color: white;
+    padding: 20px 50px;
+  }
+  
+  .navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 30px;
+    border-radius: 10px;
+  }
+  
+  .searchInput {
+    color: white;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .searchInput::placeholder {
+    color: lightgray;
+  }
+  
+  .navBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menuItem:hover{
+    text-decoration: underline;
+  }
+  
+  .menuItem {
+    margin-right: 50px;
+    cursor: pointer;
+    color: light grey;
+    font-weight: 400;
+  }
+  
+  h2 {
+    text-align: center;
+    font-weight: 850;
+    /* make our h2 tag larger */
+    font-family: sans-serif;
+    /* choosing our font */
+    background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(225, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 61%), linear-gradient(rgb(97, 183, 217) 52%, rgb(224, 246, 255) 60%, rgb(78, 99, 132) 61%);
+    /* you can change the colors based on your preference */
+    background-clip: text;
+    /*add this line, it defines how far the background should extend within an element, here we set it to text */
+    -webkit-background-clip: text;
+    /* add this line, for browsers compatibility */
+    -webkit-text-fill-color: transparent;
+    /* specifies the fill color of text characters. We use transparent to use the background value as our text fill */
+}
+
+.tabs{
+    display: flex;
+    align-items: center;
+    padding: 20;
+    color: white;
+}
+
+table, th, td {
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 300px;
+  }
+
+  table{
+    empty-cells: show;
+    width: 100%;
+  }
+
+  th, td {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    height: 80px;
+    width: 60%;
+    /*
+    margin-left: 20%;
+    margin-right: 20%; */
+  }
+
+  .button {
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .button1 {background-color: white;}
+
+  h1{
+    font-weight: bold;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+
+  }
+
+  .pageTitle{
+    color: white;
+    ;
+  }
+
+
+  .bio{
+    height: 20px;
+    width: 100%;
+    table-layout: auto;
+    border: none;
+  }
+
+  .aboutname{
+    color: black;
+  }
+
+  .title{
+    color: black
+  }
+  
+  .biotext{
+    width: 100px;
+  }
+
+  .photo{
+    width: 10%;
+  }
+
+  .hidden {
+
+    display: none;
+  
+  }
+  
+
+  .document{
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 60px;
+    left: 0;
+    margin-left: 0;
+    padding-top: 60px;
+    background: rgba(7, 3, 17, 0.5);
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 1;
+  }
+  
+  .dropdown-item {display: block;}
+
+
+  .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+  }
+  
+  #myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #myInput:focus {outline: 3px solid #ddd;}
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}

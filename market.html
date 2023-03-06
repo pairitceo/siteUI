@@ -1,0 +1,106 @@
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+<title></title>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <h2 class="name" a href="main.html">parrotAI</h2>
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="searchInput">
+                    <img src="search3.png" width="20" height="20" alt="" class="searchIcon">
+                </div>
+            </div>
+            <div class="navItem">
+                <div class="twitter">
+                    <img src="twitter-removebg-preview.png" alt text="" style="width:70px;height:50px;">
+                </div>
+            </div>
+        </div>
+        <div class="navBottom">
+            <h3 class="menuItem" a href="about.html">ABOUT</h3>
+            <h3 class="menuItem">MARKETPLACE</h3>
+            <h3 class="menuItem">GROUPS</h3>
+            <h3 class="menuItem">CONTACT</h3>
+            <h3 class="menuItem">SIGN UP</h3>
+        </div>
+    </nav>
+    <div class="pageTitle">
+        <h1>Marketplace</h1>
+    </div>
+
+            <body> 
+                <div id="dropdown">
+        
+            
+                <button class="button button1">Machine Learning</button>
+                <button class="button button1">Rule-Based</button>
+                <button class="button button1">Chat Bots</button>
+                <button class="button button1">Neural Nets</button>
+                <button class="button button1" onclick="myFunction()" class="dropbtn">More Filters...</button>
+        <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+            <a href="#about">About</a>
+            <a href="#base">Base</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+            <a href="#custom">Custom</a>
+            <a href="#support">Support</a>
+            <a href="#tools">Tools</a>
+        </div>
+    </div>
+<!-- Connect to php server to pull SQL database           -->
+<!-- <?php
+$server = mysql_connect("server", "username", "password"); 
+$db = mysql_select_db("ni354077_2sql1", $server); 
+$query = mysql_query("SELECT * FROM Jobs"); 
+?> -->
+    <!-- <div id="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+            <a href="#about">About</a>
+            <a href="#base">Base</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+            <a href="#custom">Custom</a>
+            <a href="#support">Support</a>
+            <a href="#tools">Tools</a>
+        </div>
+    </div> -->
+          
+<table>
+    <tr>
+        <td>Product</td>
+        <td>Creator</td>
+        <td>Description</td>
+        <td>Downloads</td>
+        <td>File Size</td>
+        <td>Rating</td>
+    </tr>
+
+</table>
+</body>
+<!-- Populate html table with data
+    <?php
+        while ($row = mysql_fetch_array($query)) {
+            echo "<tr>";
+            echo "<td>".$row[AuftragsID]."</td>";
+            echo "<td>".$row[Startort]."</td>";
+            echo "<td>".$row[Zielort]."</td>";
+            echo "<td>".$row[Gewicht]."</td>";
+            echo "<td>".$row[Fracht]."</td>";
+            echo "</tr>";
+        }
+
+    ?>
+</table> -->
+
+
